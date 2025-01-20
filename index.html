@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I LOVE ORANGE1106</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url('C:\Users\MSI-NB\Downloads\orange web\lovethisguy.jpeg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin: 0;
+    }
+    .container {
+      margin-top: 20%;
+      background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better text readability */
+      padding: 20px;
+      border-radius: 10px;
+      animation: fadeIn 2s ease-in-out;
+    }
+    .button {
+      margin-top: 20px;
+      background-color: #fdcb6e;
+      color: #2d3436;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 20px;
+      font-size: 18px;
+      cursor: pointer;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s;
+    }
+    .button:hover {
+      transform: scale(1.1);
+    }
+    .message {
+      display: none;
+      margin-top: 20px;
+      font-size: 1.2em;
+      animation: popIn 1s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+    @keyframes popIn {
+      0% {
+        transform: scale(0.5);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://soundcloud.com/atlanticrecords/tounge-tied-grouplove?si=6e84e4679d6f46249aecb26894bde9c7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <div class="container">
+    <h1>There ain't no one like you 💛</h1>
+    <p>Orange1106 4EVER</p>
+    <button class="button" onclick="showMessage()">Click Me!</button>
+    <div class="message" id="message">
+      <p>'Do not enter' is written on the doorway </p>
+      <p>Why can't everyone just go away? </p>
+      <p>Except you, you can stay 💕</p>
+    </div>
+  </div>
+
+  <script>
+    function showMessage() {
+      const message = document.getElementById('message');
+      message.style.display = 'block';
+    }
+  </script>
+</body>
+</html>
