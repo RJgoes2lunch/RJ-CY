@@ -7,7 +7,7 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      background: url('C:\Users\MSI-NB\Downloads\orange web\lovethisguy.jpeg') no-repeat center center fixed;
+      background: url('https://s.alicdn.com/@sc04/kf/H01bb133c76e946568e9863ebaf819c02N.jpg_720x720q50.jpg') no-repeat center center fixed;
       background-size: cover;
       color: white;
       text-align: center;
@@ -65,25 +65,37 @@
 <body>
   <!-- Background Music -->
   <audio autoplay loop>
-    <source src="https://soundcloud.com/atlanticrecords/tounge-tied-grouplove?si=6e84e4679d6f46249aecb26894bde9c7&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/mpeg">
+    <source src="https://soundcloud.com/5-0-0/you-found-me?si=fd707d917db84f3a9a845e86946b5253&utm_source=clipboard&utm_medium=text&utm_campaign=social_sharing" type="audio/mpeg">
     Your browser does not support the audio element.
   </audio>
 
   <div class="container">
     <h1>There ain't no one like you 💛</h1>
     <p>Orange1106 4EVER</p>
-    <button class="button" onclick="showMessage()">Click Me!</button>
-    <div class="message" id="message">
-      <p>'Do not enter' is written on the doorway </p>
-      <p>Why can't everyone just go away? </p>
+	<p>RJ💛CY</p>
+    <button class="button" onclick="showLine(1)">GET MORE VITAMINE C!!</button>
+    <div class="message" id="line1" style="display: none;">
+      <p>'Do not enter' is written on the doorway</p>
+    </div>
+    <button class="button" id="button2" onclick="showLine(2)" style="display: none;">I think you are so great</button>
+    <div class="message" id="line2" style="display: none;">
+      <p>Why can't everyone just go away?</p>
+    </div>
+    <button class="button" id="button3" onclick="showLine(3)" style="display: none;">I really love you</button>
+    <div class="message" id="line3" style="display: none;">
       <p>Except you, you can stay 💕</p>
     </div>
   </div>
 
   <script>
-    function showMessage() {
-      const message = document.getElementById('message');
-      message.style.display = 'block';
+    function showLine(lineNumber) {
+      const currentLine = document.getElementById(`line${lineNumber}`);
+      currentLine.style.display = 'block';
+
+      if (lineNumber < 3) {
+        const nextButton = document.getElementById(`button${lineNumber + 1}`);
+        nextButton.style.display = 'inline-block';
+      }
     }
   </script>
 </body>
